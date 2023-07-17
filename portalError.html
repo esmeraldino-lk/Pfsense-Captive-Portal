@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<style>
+  
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  html {
+    background-color: black;
+    color: #e0e0e0;
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+    animation: gradient 45s ease infinite;
+    background: linear-gradient(-49deg, #16ab3e, #1c1c1c, #10241f, #0e66b3);
+    background-size: 400% 400%;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer p{
+    opacity: 0.4;
+    color: lightgrey;
+    font-size: 12px;
+    font-style: italic;
+    cursor: context-menu;
+  }
+  .footer a{
+    color: white;
+    text-decoration: none;
+  }
+  body {
+    font-size: 15px;
+    text-align: center;
+    min-height: 500px;
+  }
+  body .text{
+    margin-top: 85px;
+    margin-bottom: 2%;
+  }
+  body .text p{
+    margin-top: 4%;
+  }
+  header h1{
+    font-size: 26px;
+    padding-top: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+  }
+  .buttonC {
+    background-color: #10e826;
+    padding: 7px;
+    margin-top: 20px;
+    border-color: #10e826;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    outline: 0;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    opacity: 0.8;
+    transition: 0.3s;
+    filter: saturate(1);
+    cursor: pointer;
+  }
+  .buttonC:hover, .buttonC:active{
+    opacity: 1;
+    
+  }
+  .placeholder {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    outline: 0;
+    color: grey;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  form span {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  .circleInterative {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 100px;
+    margin-bottom: -10px;
+    transition: width 0.6s ease-in, height 1s ease-in;
+
+  }
+  .circleInterative svg {
+    margin: auto;
+    position: relative;
+    top: -20px;
+    background-size: inherit;
+  }
+  .circleInterative:hover, .circleInterative:active {
+    width: 200px;
+    height: 40px;
+  }
+  .circleInterative p {
+    z-index: 3;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    height: 30px;
+    padding-top: 11px;
+    padding-left: 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: arial;
+    font-style: normal;
+    opacity: 0;
+    transition: 0.3s;
+    color: red;
+  }
+  .circleInterative p:hover {
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+  }
+  .circleInterativeimage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: left;
+    padding-left: 5px;
+    z-index: 1;
+  }
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }}
+  a{
+    cursor: context-menu;
+  }
+
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rede Visitantes</title>
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="foundation/css/normalize.css">
+  <link rel="stylesheet" href="foundation/css/foundation.css">
+
+  <!-- slide show-->
+  <link rel="stylesheet" type="text/css" href="vegas/jquery.vegas.css" />
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="app.css">
+
+  <script src="foundation/js/vendor/modernizr.js"></script>
+
+</head>
+
+<header style="margin-top:10px">
+    <h1>rede visitantes</h1>
+</header>
+
+<body>
+    <div class="text">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512"><style>svg{fill:#10e826; height: 80px}</style><path d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z"/></svg>
+      </div>
+      <p>Você está acessando a rede de visitantes<br> para obter acesso solicite um voucher para a recepção<br> e insira-o abaixo.</p>
+    </div>
+    
+
+    <form name="form" action="$PORTAL_ACTION$" onsubmit="return validateForm()" method="post">
+       <input class="placeholder" name="auth_voucher" type="text" placeholder="Voucher" required>
+       <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
+       <input name="zone" type="hidden" value="$PORTAL_ZONE$">
+       <input name="teste" type="hidden" value="$PORTAL_MESSAGE$">
+       <br>
+       <span style="color: red;">Voucher Incorreto.</span>
+       <br>
+       <input class="buttonC" name="accept" type="submit" value="Continuar">
+    </form>
+
+
+  <div class="footer">
+    
+      <div class="circleInterative">
+        <a href="#">
+        <div class="circleInterativeimage">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">  <image id="image0" width="30" height="30" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAA6lBMVEUAAAD3lB73lB73lB73 lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73 lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73 lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73 lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB73lB7////VYevmAAAA THRSTlMAiJcBJPb9N0JaRVgL3+kTmKhOXCHu9CgKzNUOAqqzBKyxDCPP0lPw8Z+eDVDk4krsXaCu FVby9WIl2S26ELK41NcPJvMqWVulp+hU7mihagAAAAFiS0dETYBoIGUAAAAJcEhZcwAACxMAAAsT AQCanBgAAAAHdElNRQfnBhMRLA++EzMzAAAA8ElEQVQoz33RaVuCQBAH8OEGy4vKShRKBSu6D/PC IyuN5vt/noDggZXd/b+a3d+zCzsDQEQQJWBHVlSNw6AbPIXKAU8Pq7U6hxuITbaaGOWIpccnMbdO 6Xp2jknaFk07XUxjO5SzF3l92dvX/gDzBboyqd4Qi4xXXlpKUZOt6/iTRUa88aMRAIiqcXuHZcb7 B10RQFB0k8qPT4YqJjdYz2V+eQXQsuG/jUh+H5O/PnGLPJ3tP9y383oelNvmLLKmLilNjc6v/nX9 QR/Z5jMZ6Bcw8h3zFpjZIf6wFYIwDDgMvx5PwdB5qqmKzGFJFMiNP5tWKriE5UklAAAAJXRFWHRk YXRlOmNyZWF0ZQAyMDIzLTA2LTE5VDE3OjQ0OjE1KzAwOjAwNTke0wAAACV0RVh0ZGF0ZTptb2Rp ZnkAMjAyMy0wNi0xOVQxNzo0NDoxNSswMDowMERkpm8AAAAodEVYdGRhdGU6dGltZXN0YW1wADIw MjMtMDYtMTlUMTc6NDQ6MTUrMDA6MDATcYewAAAAAElFTkSuQmCC"/>
+          </svg>
+
+        </div>
+        <p>link</p>
+        </a>
+      </div>
+    
+    <br>
+    <p>Desenvolvido e pensado por Lucas Kopsch Esmeraldino.</p>
+  </div>
+
+  <script type="text/javascript">
+
+    function validateForm() 
+    {
+      var x = document.forms["form"]["auth_voucher"].value;
+      if (x.length < 13) 
+      {
+          alert("O voucher deve conter 13 caracteres.");
+          return false;
+      }
+    }
+
+  </script>
+</body>
+</html>

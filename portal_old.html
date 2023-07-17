@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chave de Acesso</title>
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="foundation/css/normalize.css">
+  <link rel="stylesheet" href="foundation/css/foundation.css">
+
+  <!-- slide show-->
+  <link rel="stylesheet" type="text/css" href="vegas/jquery.vegas.css" />
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="app.css">
+
+  <script src="foundation/js/vendor/modernizr.js"></script>
+
+</head>
+<body>
+
+  <!-- body content here -->
+  <div class="row" style="margin-top: 12em">
+    <div class="small-6 small-centered columns panel">
+        <form method="post" action="$PORTAL_ACTION$" class="login">
+    <h1><center>Seja Bem Vindo</center></h1>
+	<!-- <p class="login-error">$PORTAL_MESSAGE$</p> -->
+    <p class="login-p">Insira o Voucher fornecido pela recepção</p>
+    <input type="text" name="auth_voucher" class="login-input" placeholder="Voucher" autofocus>
+    <!-- <input type="submit" name="accept" value="Continue" class="login-submit"><p> -->
+	<button name="accept" type="submit" value="Continue">Acessar</button>
+    <p class="footer">© 2019 Serviços em TI: <a href="#">.com.br</a>.</p>
+   </form>
+    </div>
+  </div>
+
+  <script src="foundation/js/vendor/jquery.js"></script>
+  <script src="foundation/js/foundation.min.js"></script>
+  <script type="text/javascript" src="vegas/jquery.vegas.js">
+</script>
+
+  <script>
+    $(document).foundation();
+
+    $.vegas('slideshow', {
+
+      backgrounds:[
+        { src:'img/1.jpg' },//nome das imagens
+        { src:'img/2.jpg' },
+        { src:'img/3.jpg' },
+              ]
+    })('overlay');
+
+  </script>
+</body>
+</html>
