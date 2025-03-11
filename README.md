@@ -1,9 +1,12 @@
 # Pfsense-Captive-Portal
 
-Captive Portal criado para PFsense, HTML e CSS3 composto somente em um arquivo.
+This repository contains a **Captive Portal** created for **PFsense**, using **HTML** and **CSS3**. All the code is centralized into a single HTML file for easier implementation.
 
-Arquivos: portal.html e portalerror.html
+## Files
 
-Portalerror.html é retornado quando o voucher é incorreto.
+- `portal.html`: Main file for the Captive Portal.
+- `portalerror.html`: File displayed when the provided voucher is incorrect.
 
-Portal_old refere-se ao captive portal presente antes da alteração.
+## Note
+
+- **Portal_old**: Refers to the **Captive Portal** before the changes were made.
